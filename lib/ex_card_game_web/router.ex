@@ -17,7 +17,7 @@ defmodule ExCardGameWeb.Router do
   scope "/", ExCardGameWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", GameLive, :index
   end
 
   # Other scopes may use custom stacks.
